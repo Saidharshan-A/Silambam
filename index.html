@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veera Pugazh Cholan Silambam Academy</title>
+    <meta name="description" content="Master the ancient art of Silambam. Join Veera Pugazh Cholan Silambam Academy for discipline, fitness, and culture." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Cinzel', 'serif'],
+              sans: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              academy: {
+                maroon: '#500000', // Deep Blood Red
+                red: '#8B0000',    // Fire Red
+                gold: '#FFD700',   // Bright Gold
+                orange: '#FF4500', // Magma Orange
+                dark: '#050202',   // Charred Black
+                charcoal: '#0F0F0F',
+                light: '#FFF5E1',  // Warm White
+              }
+            },
+            letterSpacing: {
+              'widest-xl': '0.25em',
+            },
+            backgroundImage: {
+              'fire-gradient': 'linear-gradient(to bottom, #000000, #220505, #000000)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Fiery Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #8B0000, #FF4500);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FFD700;
+      }
+      
+      /* Global Glows */
+      .text-glow {
+        text-shadow: 0 0 10px rgba(255, 69, 0, 0.5), 0 0 20px rgba(255, 69, 0, 0.3);
+      }
+      
+      .box-glow {
+        box-shadow: 0 0 20px rgba(255, 69, 0, 0.1), inset 0 0 20px rgba(255, 69, 0, 0.05);
+      }
+
+      /* Ember Particles */
+      .ember {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #FF4500;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #FF4500, 0 0 20px #FFD700;
+        animation: floatUp 4s linear infinite;
+        opacity: 0;
+      }
+
+      @keyframes floatUp {
+        0% { transform: translateY(100vh) scale(0); opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 0.8; }
+        100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+      }
+
+      .glass-panel-fire {
+        background: rgba(20, 5, 5, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 69, 0, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-academy-dark text-academy-light antialiased overflow-x-hidden selection:bg-academy-orange selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
